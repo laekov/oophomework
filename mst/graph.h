@@ -3,7 +3,7 @@
 #include <set>
 #include <iostream>
 class Graph {
-	private:
+	protected:
 		enum {
 			MAX_NODE = 20,
 			MAX_COORDINATE = 10000,
@@ -50,6 +50,7 @@ class Graph {
 					std::cout << " length = " << this->len << std::endl;
 				}
 				friend class MST;
+				friend class Tree;
 		};
 
 		/* sets of nodes and edges on this plane */
@@ -64,6 +65,7 @@ class Graph {
 		/* add a random point to this plane and add edges from it to all other points */
 		void addRandomNodeOnPlan();
 		friend class MST;
+		friend class Tree;
 };
 
 bool operator <(const Graph::Node&, const Graph::Node&);

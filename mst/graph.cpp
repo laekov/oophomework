@@ -20,7 +20,7 @@ Graph::Edge::Edge(std::set<Node>::iterator _u, std::set<Node>::iterator _v) {
 }
 
 bool operator <(const Graph::Edge& a, const Graph::Edge& b) {
-	return a.len < b.len;
+	return a.len < b.len || (a.len == b.len && a.u->_id() < b.u->_id()) || (a.len == b.len && a.u->_id() == b.u->_id() && a.v->_id() < b.v->_id());
 }
 
 void Graph::addRandomNodeOnPlan() {
