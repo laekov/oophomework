@@ -31,6 +31,11 @@ void T::showMap() {
 	coute((unsigned long long)&this->a);
 	coute(sizeof(this->a));
 	std::cout << std::endl;
+	coute("e");
+	coute(this->e);
+	coute((unsigned long long)&this->e);
+	coute(sizeof(this->e));
+	std::cout << std::endl;
 	coute("b");
 	coute(this->b);
 	coute((unsigned long long)&this->b);

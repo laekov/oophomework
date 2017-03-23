@@ -6,6 +6,7 @@ class T {
 		T();
 		void showMap();
 	private:
+		long long e;
 		unsigned b;
 	protected:
 		unsigned c;
