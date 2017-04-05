@@ -4,7 +4,7 @@
 #include <ctime>
 
 bool operator <(const Graph::Node& a, const Graph::Node& b) {
-	return (a.x == b.x) ? (a.x < b.x) : (a.y < b.y);
+	return (a.x != b.x) ? (a.x < b.x) : (a.y < b.y);
 }
 
 inline double sqr(const double& x) {
