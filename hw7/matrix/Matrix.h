@@ -2,6 +2,7 @@
 #define MATRIX_H
 #include <vector>
 #include <string>
+#include "restrictions.h"
 class Matrix {
 	private:
 		std::vector<std::vector<int>> rows;

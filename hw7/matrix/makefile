@@ -1,4 +1,4 @@
-cc = g++ -g
+cc = g++ -g -Wall -Wextra -Wconversion
 
 main : main.cpp matrix.o 
 	$(cc) main.cpp Matrix.o -o main
